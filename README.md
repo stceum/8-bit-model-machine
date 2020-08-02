@@ -1,6 +1,6 @@
-![](media/image1.jpeg){width="0.625in" height="0.6020833333333333in"}
+![](media/image1.jpeg)
 
-![](media/image2.jpeg){width="1.375in" height="0.4013888888888889in"}
+![](media/image2.jpeg)
 
 # 课程设计报告
 
@@ -200,8 +200,7 @@
 
 从整体上看，模型计算机主要分为：CPU模块、外设输入模块、外设输出模块、存储模块。模型计算机结构框图如图2.1所示，具体模块有：节拍发生器模块、指令寄存器模块IR、算术逻辑单元模块ALU 、数据寄存器模块DR 、程序计数器模块PC、地址寄存器模块MAR 、操作控制器模块等。
 
-![图2-2-1 模型计算机结构框图](media/image3.png){width="6.416666666666667in"
-height="3.359722222222222in"}
+![图2-2-1 模型计算机结构框图](media/image3.png)
 
 
 2.2模型计算机的指令系统设计
@@ -229,13 +228,11 @@ height="3.359722222222222in"}
 行为描述模型实现了节拍器的功能，具体代码如图3-1-2所示，编译成功后得到RTL
 Viewer如图3-1-3所示。
 
-![](media/image5.png){width="6.302083333333333in"
-height="2.4895833333333335in"}
+![](media/image5.png)
 
 - 如图3-1-2 节拍发生器VHDL代码
 
-![](media/image6.png){width="6.2972222222222225in"
-height="3.547222222222222in"}
+![](media/image6.png)
 
 - 图3-1-3 节拍发生器的RTL图
 
@@ -243,19 +240,15 @@ height="3.547222222222222in"}
 
 要用`ModelSim`实现节拍发生器脉冲波形图，编写的测试向量如图3-1-4所示，运行结果如图3-1-5。
 
-![](media/image7.png){width="6.2972222222222225in"
-height="4.947916666666667in"}
+![](media/image7.png)
 
 - 如图3-1-5 节拍发生器测试向量代码
 
-![](media/image8.png){width="6.291666666666667in"
-height="1.0833333333333333in"}
+![](media/image8.png)
 
-![](media/image9.png){width="6.2972222222222225in"
-height="1.2451388888888888in"}
+![](media/image9.png)
 
-![](media/image10.png){width="6.291666666666667in"
-height="1.1618055555555555in"}
+![](media/image10.png)
 
 - 如图3-1-6 节拍发生器`ModelSim`仿真结果
 
@@ -268,13 +261,11 @@ height="1.1618055555555555in"}
 
 同样为了实现的便捷，此处使用行为描述模型进行VHDL 设计。
 
-![](media/image11.png){width="5.7347222222222225in"
-height="4.245138888888889in"}
+![](media/image11.png)
 
 - 图3-2-1 程序计数器的VHDL代码
 
-![](media/image12.png){width="6.2972222222222225in"
-height="2.797222222222222in"}
+![](media/image12.png)
 
 - 图3-2-2 程序计数器的RTL图
 
@@ -282,23 +273,19 @@ height="2.797222222222222in"}
 
 程序计数器编写的测试向量如图3-2-3所示，simulation仿真运行结果如图3-2-4。由波形图可知，时钟信号的周期设置为1ns，
 前1ns进行清零，将PC
-的值清零，之后开始随着上升沿进行计数，输出地址。![](media/image13.png){width="5.7972222222222225in"
-height="6.8180555555555555in"}
+的值清零，之后开始随着上升沿进行计数，输出地址。![](media/image13.png)
 
 - 图 3-2-3 PC 测试向量VHDL
 
-![](media/image14.png){width="6.302083333333333in"
-height="0.8541666666666666in"}
+![](media/image14.png)
 
 - 图3-2-4(1)程序计数器仿真结果
 
-![](media/image15.png){width="6.291666666666667in"
-height="0.7972222222222223in"}
+![](media/image15.png)
 
 - 图3-2-4(2)程序计数器仿真结果
 
-![](media/image16.png){width="6.302083333333333in"
-height="0.9847222222222223in"}
+![](media/image16.png)
 
 - 图3-2-4(3) 程序计数器仿真结果
 
@@ -308,8 +295,7 @@ height="0.9847222222222223in"}
 指令代码是16位的， 所以指令寄存器可以使用两个8位D触发器实现。本简易计算器共实现13条指令分别为：BX 寄存器传值到 AX、 AX寄存器传值到BX、 从存储器读取一个值到AX、 从存储器读取一个值到BX、加法指令add、 减法指令sub、 将AX 寄存器中的值右移、 将BX
 寄存器中的值右移、 将AX 寄存器中的值左移、 将BX 寄存器中的值左移、交换AX 和BX 寄存器中的值、 取与(and) 、停机 (halt)共13条指令。设计上通过数据总线将数据传输进入IR 存储并进行译码，将相应的端口输出信号。设计图如图3-3-1 所示。
 
-![](media/image17.png){width="3.9743055555555555in"
-height="3.4270833333333335in"}
+![](media/image17.png)
 
 - 图3-3-1 指令寄存器(IR) 和指令译码器
 
@@ -317,12 +303,11 @@ height="3.4270833333333335in"}
 
 使用行为描述模型进行VHDL 设计，如图3-3-2所示，RTL Viewer 如图3-3-3
 
-![](media/image18.png){width="3.84375in" height="9.71875in"}
+![](media/image18.png)
 
 - 图 3-3-2 指令寄存器(IR) 和指令译码器的 VHDL
-  设计图![](media/image19.png){width="6.302083333333333in"
-  height="5.645833333333333in"}
-
+  设计图![](media/image19.png)
+  
 - 图 3-3-3 指令寄存器(IR) 和指令译码器的 RTL Viewer
 
 ### 3.3.2 指令寄存器(IR) 和指令译码器的仿真
@@ -330,20 +315,19 @@ height="3.4270833333333335in"}
 指令寄存器(IR)
 和指令译码器的测试向量如图3-3-4所示，simulation仿真运行结果如图3-3-5。
 
-![](media/image20.png){width="4.052083333333333in" height="9.71875in"}
+![](media/image20.png)
 
 - 图 3-3-4 寄存器(IR) 和指令译码器的测试向量 VHDL
 
-![](media/image21.png){width="6.2972222222222225in"
-height="1.5208333333333333in"}
+![](media/image21.png)
 
 - 图 3-3-5(1) 指令寄存器(IR) 和指令译码器的仿真
 
-![](media/image22.png){width="6.302083333333333in" height="1.40625in"}
+![](media/image22.png)
 
 - 图 3-3-5(2) 指令寄存器(IR) 和指令译码器的仿真
 
-![](media/image23.png){width="6.291666666666667in" height="1.625in"}
+![](media/image23.png)
 
 - 图 3-3-5(3) 指令寄存器(IR) 和指令译码器的仿真
 
@@ -355,28 +339,23 @@ height="1.5208333333333333in"}
 使用行为描述模型进行VHDL 设计，设计代码如图3-4-1所示，RTL Viewer
 如图3-4-2所示。
 
-![](media/image24.png){width="6.2972222222222225in"
-height="9.630555555555556in"}
+![](media/image24.png)
 
 - 图 3-4-1 存储器 RAM 的VHDL 设计
 
-![](media/image25.png){width="6.302083333333333in"
-height="2.328472222222222in"}
+![](media/image25.png)
 
 - 图 3-4-2 存储器 RAM的RTL Viewer
 
 ### 3.4.2 存储器 RAM 的仿真
 
-存储器 RAM 的测试向量如图3-4-3 所示，simulation 仿真结果如图 3-4-4
-所示。
+存储器 RAM 的测试向量如图3-4-3 所示，simulation 仿真结果如图 3-4-4所示。
 
-![](media/image26.png){width="6.2972222222222225in"
-height="9.547222222222222in"}
+![](media/image26.png)
 
 - 图 3-4-3 存储器 RAM 的测试向量
 
-![](media/image27.png){width="6.2972222222222225in"
-height="3.088888888888889in"}
+![](media/image27.png)
 
 - 图 3-4-4 存储器 RAM 的simulation 仿真结果
 
@@ -388,12 +367,11 @@ height="3.088888888888889in"}
 使用行为描述模型进行VHDL 设计，设计代码如图 3-5-1 所示，RTL Viewer 如图
 3-5-2 所示。
 
-![](media/image28.png){width="6.2972222222222225in" height="1.40625in"}
+![](media/image28.png)
 
 - 图 3-5-1 存储器选择器 RAM MUX 的VHDL 设计
 
-![](media/image29.png){width="6.2972222222222225in"
-height="2.5416666666666665in"}
+![](media/image29.png)
 
 - 图 3-5-2 存储器选择器 RAM MUX 的RTL Viewer
 
@@ -402,18 +380,15 @@ height="2.5416666666666665in"}
 存储器选择器 RAM MUX 的测试向量如图 3-5-3 所示，simulation 仿真结果如图
 3-5-4 所示。
 
-![](media/image30.png){width="6.302083333333333in"
-height="6.5993055555555555in"}
+![](media/image30.png)
 
 - 图 3-5-3 存储器选择器 RAM MUX 的测试向量
 
-![](media/image31.png){width="6.302083333333333in"
-height="1.4430555555555555in"}
+![](media/image31.png)
 
 - 图 3-5-4(1) 存储器选择器 RAM MUX 的simulation仿真
 
-![](media/image32.png){width="6.302083333333333in"
-height="1.3645833333333333in"}
+![](media/image32.png)
 
 - 图 3-5-4(2) 存储器选择器 RAM MUX 的simulation仿真
 
@@ -425,13 +400,11 @@ height="1.3645833333333333in"}
 使用行为描述模型进行VHDL 设计，设计代码如图 3-6-1 所示，RTL Viewer 如图
 3-6-2 所示。
 
-![](media/image33.png){width="6.2972222222222225in"
-height="2.6458333333333335in"}
+![](media/image33.png)
 
 - 图 3-6-1 地址寄存器 MAR 的VHDL 设计
 
-![](media/image34.png){width="6.2972222222222225in"
-height="2.328472222222222in"}
+![](media/image34.png)
 
 - 图 3-6-2 地址寄存器 MAR 的RTL Viewer
 
@@ -440,18 +413,15 @@ height="2.328472222222222in"}
 地址寄存器 MAR 的测试向量如图 3-6-3 所示，simulation 仿真结果如图 3-6-4
 所示。
 
-![](media/image35.png){width="6.302083333333333in"
-height="5.9743055555555555in"}
+![](media/image35.png)
 
 - 图 3-6-3 地址寄存器 MAR 的测试向量
 
-![](media/image36.png){width="6.302083333333333in"
-height="1.2555555555555555in"}
+![](media/image36.png)
 
 - 图 3-6-4(1) 地址寄存器 MAR 的simulation 仿真
 
-![](media/image37.png){width="6.302083333333333in"
-height="1.0729166666666667in"}
+![](media/image37.png)
 
 - 图 3-6-4(2) 地址寄存器 MAR 的simulation 仿真
 
@@ -463,12 +433,11 @@ height="1.0729166666666667in"}
 使用行为描述模型进行VHDL 设计，设计代码如图 3-7-1 所示，RTL Viewer 如图
 3-7-2 所示。
 
-![](media/image38.png){width="6.302083333333333in" height="4.53125in"}
+![](media/image38.png)
 
 - 图 3-7-1 累加器 ACC 的VHDL 设计
 
-![](media/image39.png){width="6.2972222222222225in"
-height="7.4847222222222225in"}
+![](media/image39.png)
 
 - 图 3-7-2 累加器 ACC 的RTL Viewer
 
@@ -477,12 +446,11 @@ height="7.4847222222222225in"}
 累加器 ACC 的测试向量如图 3-7-3 所示，累加器 ACC 的simulation
 仿真结果如图 3-7-4 所示。
 
-![](media/image40.png){width="6.291666666666667in"
-height="9.447916666666666in"}
+![](media/image40.png)
 
 - 图 3-7-3 累加器 ACC 的测试向量
 
-![](media/image41.png){width="6.302083333333333in" height="1.21875in"}
+![](media/image41.png)
 
 - 图 3-7-4 累加器 ACC 的simulation 仿真
 
@@ -494,13 +462,11 @@ height="9.447916666666666in"}
 使用行为描述模型进行VHDL 设计，设计代码如图 3-8-1 所示，RTL Viewer 如图
 3-8-2 所示。
 
-![](media/image42.png){width="6.2972222222222225in"
-height="5.2243055555555555in"}
+![](media/image42.png)
 
 - 图 3-8-1 算术逻辑单元模块ALU 的VHDL 设计
 
-![](media/image43.png){width="6.2972222222222225in"
-height="3.7395833333333335in"}
+![](media/image43.png)
 
 - 图 3-8-2 算术逻辑单元模块ALU 的RTL Viewer
 
@@ -509,17 +475,15 @@ height="3.7395833333333335in"}
 算术逻辑单元模块ALU 的测试向量如图 3-8-3 所示，算术逻辑单元模块ALU
 的simulation 仿真结果如图 3-8-4 所示。
 
-![](media/image44.png){width="4.995138888888889in" height="9.71875in"}
+![](media/image44.png)
 
 - 图 3-8-3 算术逻辑单元模块ALU 的测试向量
 
-![](media/image45.png){width="6.291666666666667in"
-height="0.9791666666666666in"}
+![](media/image45.png)
 
 - 图 3-8-4(1) 算术逻辑单元模块ALU 的simulation 仿真
 
-![](media/image46.png){width="6.291666666666667in"
-height="1.0159722222222223in"}
+![](media/image46.png)
 
 - 图 3-8-4(2) 算术逻辑单元模块ALU 的simulation 仿真
 
@@ -530,13 +494,11 @@ height="1.0159722222222223in"}
 
 使用行为描述模型进行VHDL 设计，设计代码如图 3-9-1 所示，RTL Viewer 如图3-9-2 所示。
 
-![](media/image47.png){width="6.291666666666667in"
-height="5.229166666666667in"}
+![](media/image47.png)
 
 - 图 3-9-1 控制器CTRL 的VHDL 设计
 
-![](media/image48.png){width="6.2972222222222225in"
-height="6.677083333333333in"}
+![](media/image48.png)
 
 - 图 3-9-2 控制器CTRL 的RTL Viewer
 
@@ -544,18 +506,15 @@ height="6.677083333333333in"}
 
 控制器CTRL的测试向量如图 3-9-3 所示，控制器CTRL的simulation 仿真结果如图3-9-4 所示。
 
-![](media/image49.png){width="4.3805555555555555in"
-height="9.713888888888889in"}
+![](media/image49.png)
 
 - 图 3-9-3 控制器CTRL的测试向量
 
-![](media/image50.png){width="6.291666666666667in"
-height="3.0993055555555555in"}
+![](media/image50.png)
 
 - 图 3-9-4(1) 控制器CTRL的simulation 仿真
 
-![](media/image51.png){width="6.302083333333333in"
-height="3.0993055555555555in"}
+![](media/image51.png)
 
 - 图 3-9-4(2) 控制器CTRL的simulation 仿真
 
@@ -566,13 +525,11 @@ height="3.0993055555555555in"}
 
 使用行为描述模型进行VHDL 设计，设计代码如图 3-10-1 所示，RTL Viewer 如图3-10-2 所示。
 
-![](media/image52.png){width="6.302083333333333in"
-height="2.5208333333333335in"}
+![](media/image52.png)
 
 - 图 3-10-1 数据寄存器DR 的VHDL 设计
 
-![](media/image53.png){width="6.2972222222222225in"
-height="2.3229166666666665in"}
+![](media/image53.png)
 
 - 图 3-10-2 数据寄存器DR 的RTL Viewer
 
@@ -580,13 +537,11 @@ height="2.3229166666666665in"}
 
 数据寄存器DR 的测试向量如图 3-10-3 所示，数据寄存器DR 的simulation仿真结果如图 3-10-4 所示。
 
-![](media/image54.png){width="6.2972222222222225in"
-height="7.1618055555555555in"}
+![](media/image54.png)
 
 - 图 3-10-3 数据寄存器DR 的测试向量
 
-![](media/image55.png){width="6.2972222222222225in"
-height="3.078472222222222in"}
+![](media/image55.png)
 
 - 图 3-10-4 数据寄存器DR 的simulation 仿真
 
@@ -599,16 +554,15 @@ height="3.078472222222222in"}
 按照开始设计的模型机的结构将部件进行连线，并将寄存器和总线映射出来便于观察模型机的运行情况。顶层模块的设计代码如图4-1-1所示，对应得RTL
 Viewer如图4-1-2所示。
 
-![](media/image56.png){width="6.25in" height="6.7555555555555555in"}
+![](media/image56.png)
 
-![](media/image57.png){width="6.270833333333333in"
-height="6.791666666666667in"}
+![](media/image57.png)
 
-![](media/image58.png){width="6.260416666666667in" height="3.25in"}
+![](media/image58.png)
 
 - 图4-1-1 顶层VHDL 设计
 
-![](media/image59.png){width="6.2972222222222225in" height="3.3125in"}
+![](media/image59.png)
 
 - 图4-1-2 顶层RTL Viewer
 
@@ -617,28 +571,23 @@ height="6.791666666666667in"}
 
 编写`testbenth`文件对顶层模块测试。测试文件对信号做了六次修改。顶层设计的测试向量如图4-1-3 所示，顶层设计 的simulation 仿真结果如图 4-1-4 所示。
 
-![](media/image60.png){width="6.2972222222222225in"
-height="6.604166666666667in"}
+![](media/image60.png)
 
-![](media/image61.png){width="6.0368055555555555in"
-height="8.151388888888889in"}
+![](media/image61.png)
 
-![](media/image62.png){width="5.6930555555555555in"
-height="5.0368055555555555in"}
+![](media/image62.png)
 
 - 图 4-1-3 顶层模块VHDL 仿真向量
 
 从仿真结果可以看出，第一次得求与指令0101010101010101和0000000000001100求与指令结果正确，后来的和1110001111000111求和结果也正确，以及AX和BX 寄存器交换数据得结果和预期中一致。综上，满足设计要求。
 
-![](media/image63.png){width="6.307638888888889in" height="1.0625in"}
+![](media/image63.png)
 
-![](media/image64.png){width="6.291666666666667in"
-height="1.1041666666666667in"}
+![](media/image64.png)
 
 （通过RAM输入指令和数据）
 
-![](media/image65.png){width="6.2972222222222225in"
-height="0.9847222222222223in"}
+![](media/image65.png)
 
 - 图 4-1-3 顶层模块VHDL simulation仿真结果
 
