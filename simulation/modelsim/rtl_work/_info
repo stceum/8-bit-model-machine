@@ -1,0 +1,568 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/hang/Documents/final_model_machine/model_machine/simulation/modelsim
+Eacc
+Z1 w1595240482
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 5
+R0
+Z4 8C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd
+Z5 FC:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd
+l0
+L4 1
+V0ahQ=U`RVR[:FYTHDRaTG3
+!s100 SR`Ld^AOXG8kV3DN4=i[_0
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1595263446
+!i10b 1
+Z8 !s108 1595263446.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd|
+Z10 !s107 C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aacc_arch
+R2
+R3
+DEx4 work 3 acc 0 22 0ahQ=U`RVR[:FYTHDRaTG3
+!i122 5
+l21
+L18 29
+VlV]2]8HGhRVIO;X_o_ka@2
+!s100 X>jaoND9<hGcj53X[IXO@0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ealu
+Z13 w1595202458
+Z14 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 6
+R0
+Z15 8C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd
+Z16 FC:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd
+l0
+L5 1
+Vba:md`>nXXDcjcDdeK8;m0
+!s100 9fOGdlMGHL_=[z]?6lGh53
+R6
+31
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd|
+Z18 !s107 C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd|
+!i113 1
+R11
+R12
+Aalu_arch
+R14
+R2
+R3
+DEx4 work 3 alu 0 22 ba:md`>nXXDcjcDdeK8;m0
+!i122 6
+l21
+L19 25
+V?1DkgnUCgN_4^MiMO=Wcl2
+!s100 ^nP4LQ]hHeZVknMN7BkGR3
+R6
+31
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+Ecounter
+Z19 w1595210357
+R2
+R3
+!i122 9
+R0
+Z20 8C:/Users/hang/Documents/final_model_machine/model_machine/COUNTER.vhd
+Z21 FC:/Users/hang/Documents/final_model_machine/model_machine/COUNTER.vhd
+l0
+L4 1
+VY8:T35[YQ3=zM5cVkSO^W3
+!s100 ZYY3Gl;?4RKalLkGjdk;T2
+R6
+31
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/hang/Documents/final_model_machine/model_machine/COUNTER.vhd|
+Z23 !s107 C:/Users/hang/Documents/final_model_machine/model_machine/COUNTER.vhd|
+!i113 1
+R11
+R12
+Acounter_arch
+R2
+R3
+DEx4 work 7 counter 0 22 Y8:T35[YQ3=zM5cVkSO^W3
+!i122 9
+l12
+L10 14
+VgjT1ol3XC55=66KkhJkU[1
+!s100 [Vk[o6AUNCGENl]DYUBGl3
+R6
+31
+R7
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12
+Ectrl
+Z24 w1595246857
+R2
+R3
+!i122 7
+R0
+Z25 8C:/Users/hang/Documents/final_model_machine/model_machine/CTRL.vhd
+Z26 FC:/Users/hang/Documents/final_model_machine/model_machine/CTRL.vhd
+l0
+L4 1
+VcNC2d62ba;cLoPNf9;O<i2
+!s100 kz`MbgFGScd9Ji9QOL9Wd2
+R6
+31
+R7
+!i10b 1
+R8
+Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/hang/Documents/final_model_machine/model_machine/CTRL.vhd|
+Z28 !s107 C:/Users/hang/Documents/final_model_machine/model_machine/CTRL.vhd|
+!i113 1
+R11
+R12
+Actrl_arch
+R2
+R3
+DEx4 work 4 ctrl 0 22 cNC2d62ba;cLoPNf9;O<i2
+!i122 7
+l41
+L40 30
+VeFkSz9<PJAAVj04T<@_Ti3
+!s100 @OD4hd=4]@eh285IK4JSN2
+R6
+31
+R7
+!i10b 1
+R8
+R27
+R28
+!i113 1
+R11
+R12
+Edr
+Z29 w1595260094
+R2
+R3
+!i122 8
+R0
+Z30 8C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd
+Z31 FC:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd
+l0
+L4 1
+VzMZjO240f?SO@W?00>km72
+!s100 _MIBXSJmKGWT<DHFT<?zT3
+R6
+31
+R7
+!i10b 1
+R8
+Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd|
+Z33 !s107 C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd|
+!i113 1
+R11
+R12
+Adr_arch
+R2
+R3
+DEx4 work 2 dr 0 22 zMZjO240f?SO@W?00>km72
+!i122 8
+l15
+L13 13
+V`U`<RM_8ALmadh98[1zJh1
+!s100 jH[eJoB2Y4UOAjbbL:nmR3
+R6
+31
+R7
+!i10b 1
+R8
+R32
+R33
+!i113 1
+R11
+R12
+Eibus
+Z34 w1595172482
+R2
+R3
+!i122 11
+R0
+Z35 8C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd
+Z36 FC:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd
+l0
+L4 1
+V9ili`O?79`A`ZLPb_QAMm1
+!s100 9Nmmz8:c4KH[[gFHW3FB?3
+R6
+31
+Z37 !s110 1595263447
+!i10b 1
+Z38 !s108 1595263447.000000
+Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd|
+Z40 !s107 C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd|
+!i113 1
+R11
+R12
+Aibus_arch
+R2
+R3
+DEx4 work 4 ibus 0 22 9ili`O?79`A`ZLPb_QAMm1
+!i122 11
+l15
+L13 18
+V5lC_:FofSPga7CgVE>K7A3
+!s100 AOn4A?HL_5<PO3^o[Z<Io2
+R6
+31
+R37
+!i10b 1
+R38
+R39
+R40
+!i113 1
+R11
+R12
+Eir
+Z41 w1594694937
+Z42 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z43 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+!i122 1
+R0
+Z44 8C:/Users/hang/Documents/final_model_machine/model_machine/IR.vhd
+Z45 FC:/Users/hang/Documents/final_model_machine/model_machine/IR.vhd
+l0
+L5 1
+VC]cV?zJiUaeMng77=7C8N3
+!s100 m98iSlEmdJ@^nm]cB>1Kf1
+R6
+31
+Z46 !s110 1595263445
+!i10b 1
+Z47 !s108 1595263445.000000
+Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/hang/Documents/final_model_machine/model_machine/IR.vhd|
+Z49 !s107 C:/Users/hang/Documents/final_model_machine/model_machine/IR.vhd|
+!i113 1
+R11
+R12
+Air_arch
+R42
+R43
+R2
+R3
+DEx4 work 2 ir 0 22 C]cV?zJiUaeMng77=7C8N3
+!i122 1
+l31
+L28 86
+V>nRPLzj`WJXN2P71Qhf=Y0
+!s100 2FUDh=Zl3T>IJm[9AZ?lV3
+R6
+31
+R46
+!i10b 1
+R47
+R48
+R49
+!i113 1
+R11
+R12
+Emar
+Z50 w1595239090
+R2
+R3
+!i122 4
+R0
+Z51 8C:/Users/hang/Documents/final_model_machine/model_machine/MAR.vhd
+Z52 FC:/Users/hang/Documents/final_model_machine/model_machine/MAR.vhd
+l0
+L4 1
+VkRKIZgCIi8[GE3cfn`=n;1
+!s100 f`OXdQL4U91>jknncKaBT2
+R6
+31
+R7
+!i10b 1
+R47
+Z53 !s90 -reportprogress|300|-93|-work|work|C:/Users/hang/Documents/final_model_machine/model_machine/MAR.vhd|
+Z54 !s107 C:/Users/hang/Documents/final_model_machine/model_machine/MAR.vhd|
+!i113 1
+R11
+R12
+Amar_arch
+R2
+R3
+DEx4 work 3 mar 0 22 kRKIZgCIi8[GE3cfn`=n;1
+!i122 4
+l13
+L11 13
+VNINzUQLPGK>YkK<hDO`Pf0
+!s100 XMDf_nHS?n<ZnSi9k@bLg3
+R6
+31
+R7
+!i10b 1
+R47
+R53
+R54
+!i113 1
+R11
+R12
+Emodel_machine
+Z55 w1595262476
+R42
+R43
+R3
+R2
+R14
+!i122 10
+R0
+Z56 8C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd
+Z57 FC:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd
+l0
+L6 1
+VeE_XGB:a>5YIc<44=iYe60
+!s100 =I8SjIF_Tao4o`ePKZ]nV2
+R6
+31
+R37
+!i10b 1
+R8
+Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd|
+Z59 !s107 C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd|
+!i113 1
+R11
+R12
+Amod_mach_arch
+R42
+R43
+R3
+R2
+R14
+DEx4 work 13 model_machine 0 22 eE_XGB:a>5YIc<44=iYe60
+!i122 10
+l203
+L25 223
+VQAUUonibdVGaO1Mz:Cian1
+!s100 zigNcjYP`e^1`44`Mg8F_2
+R6
+31
+R37
+!i10b 1
+R8
+R58
+R59
+!i113 1
+R11
+R12
+Emodel_machine_tb
+Z60 w1595263296
+R43
+R42
+R2
+R3
+!i122 12
+R0
+Z61 8C:/Users/hang/Documents/final_model_machine/model_machine/testbench/model_machine_tb.vhd
+Z62 FC:/Users/hang/Documents/final_model_machine/model_machine/testbench/model_machine_tb.vhd
+l0
+L6 1
+VSJ2S20B9KKP71FAmXVJl71
+!s100 NcmFG[O8hJ7`T9SfH<V9]2
+R6
+31
+R37
+!i10b 1
+R38
+Z63 !s90 -reportprogress|300|-93|-work|work|C:/Users/hang/Documents/final_model_machine/model_machine/testbench/model_machine_tb.vhd|
+!s107 C:/Users/hang/Documents/final_model_machine/model_machine/testbench/model_machine_tb.vhd|
+!i113 1
+R11
+R12
+Atest
+R43
+R42
+R2
+R3
+DEx4 work 16 model_machine_tb 0 22 SJ2S20B9KKP71FAmXVJl71
+!i122 12
+l35
+L9 149
+Vf2JNbLn0XNK0bbDB9[9L12
+!s100 1lM@8KbSn7oCD:d629cI92
+R6
+31
+R37
+!i10b 1
+R38
+R63
+Z64 !s107 C:/Users/hang/Documents/final_model_machine/model_machine/testbench/model_machine_tb.vhd|
+!i113 1
+R11
+R12
+Epc
+Z65 w1594446183
+R42
+R43
+R3
+R2
+R14
+!i122 0
+R0
+Z66 8C:/Users/hang/Documents/final_model_machine/model_machine/PC.vhd
+Z67 FC:/Users/hang/Documents/final_model_machine/model_machine/PC.vhd
+l0
+L6 1
+ViIQYe>1TgcVQ4AjI:Y^743
+!s100 5F>nTznfK^]cb2nGOUbC93
+R6
+31
+R46
+!i10b 1
+R47
+Z68 !s90 -reportprogress|300|-93|-work|work|C:/Users/hang/Documents/final_model_machine/model_machine/PC.vhd|
+Z69 !s107 C:/Users/hang/Documents/final_model_machine/model_machine/PC.vhd|
+!i113 1
+R11
+R12
+Apc_arch
+R42
+R43
+R3
+R2
+R14
+DEx4 work 2 pc 0 22 iIQYe>1TgcVQ4AjI:Y^743
+!i122 0
+l17
+L15 15
+VQm<71;>4BAhzVlQ_bLB:m3
+!s100 WP5o?YcW<Af>XQFO9;9293
+R6
+31
+R46
+!i10b 1
+R47
+R68
+R69
+!i113 1
+R11
+R12
+Eram
+Z70 w1594654499
+R14
+R2
+R3
+!i122 2
+R0
+Z71 8C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd
+Z72 FC:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd
+l0
+L5 1
+V44CSVfPY;4kOFJ9FI@l@j0
+!s100 d^XlOP5iY4]o^?UEaG:a93
+R6
+31
+R46
+!i10b 1
+R47
+Z73 !s90 -reportprogress|300|-93|-work|work|C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd|
+Z74 !s107 C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd|
+!i113 1
+R11
+R12
+Aram_arch
+R14
+R2
+R3
+DEx4 work 3 ram 0 22 44CSVfPY;4kOFJ9FI@l@j0
+!i122 2
+l16
+L13 14
+V6mc5j_P]?53UnN4=hVlM62
+!s100 7?m`PQ_DXYVG[I0JgocdX1
+R6
+31
+R46
+!i10b 1
+R47
+R73
+R74
+!i113 1
+R11
+R12
+Eram_mux
+Z75 w1594567784
+R2
+R3
+!i122 3
+R0
+Z76 8C:/Users/hang/Documents/final_model_machine/model_machine/RAM_MUX.vhd
+Z77 FC:/Users/hang/Documents/final_model_machine/model_machine/RAM_MUX.vhd
+l0
+L4 1
+VZKHfBz>gCNWGUGLilVNjc1
+!s100 SQnb1PS@5a0W1Zbn4F64Z1
+R6
+31
+R46
+!i10b 1
+R47
+Z78 !s90 -reportprogress|300|-93|-work|work|C:/Users/hang/Documents/final_model_machine/model_machine/RAM_MUX.vhd|
+Z79 !s107 C:/Users/hang/Documents/final_model_machine/model_machine/RAM_MUX.vhd|
+!i113 1
+R11
+R12
+Aram_mux_arch
+R2
+R3
+DEx4 work 7 ram_mux 0 22 ZKHfBz>gCNWGUGLilVNjc1
+!i122 3
+l12
+L11 4
+V_LLi5f:<E^zWhcf[@TemK3
+!s100 h9o7k6o]0W?an>bfm_7B73
+R6
+31
+R46
+!i10b 1
+R47
+R78
+R79
+!i113 1
+R11
+R12

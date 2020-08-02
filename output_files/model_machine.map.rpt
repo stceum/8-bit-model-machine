@@ -1,0 +1,476 @@
+Analysis & Synthesis report for model_machine
+Tue Jul 21 00:43:38 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Jul 21 00:43:38 2020       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                      ; model_machine                               ;
+; Top-level Entity Name              ; model_machine                               ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 737                                         ;
+;     Total combinational functions  ; 471                                         ;
+;     Dedicated logic registers      ; 352                                         ;
+; Total registers                    ; 352                                         ;
+; Total pins                         ; 115                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                            ; model_machine      ; model_machine      ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; PC.vhd                           ; yes             ; User VHDL File  ; C:/Users/hang/Documents/final_model_machine/model_machine/PC.vhd            ;         ;
+; IR.vhd                           ; yes             ; User VHDL File  ; C:/Users/hang/Documents/final_model_machine/model_machine/IR.vhd            ;         ;
+; RAM.vhd                          ; yes             ; User VHDL File  ; C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd           ;         ;
+; RAM_MUX.vhd                      ; yes             ; User VHDL File  ; C:/Users/hang/Documents/final_model_machine/model_machine/RAM_MUX.vhd       ;         ;
+; MAR.vhd                          ; yes             ; User VHDL File  ; C:/Users/hang/Documents/final_model_machine/model_machine/MAR.vhd           ;         ;
+; ACC.vhd                          ; yes             ; User VHDL File  ; C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd           ;         ;
+; ALU.vhd                          ; yes             ; User VHDL File  ; C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd           ;         ;
+; CTRL.vhd                         ; yes             ; User VHDL File  ; C:/Users/hang/Documents/final_model_machine/model_machine/CTRL.vhd          ;         ;
+; DR.vhd                           ; yes             ; User VHDL File  ; C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd            ;         ;
+; COUNTER.vhd                      ; yes             ; User VHDL File  ; C:/Users/hang/Documents/final_model_machine/model_machine/COUNTER.vhd       ;         ;
+; model_machine.vhd                ; yes             ; User VHDL File  ; C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd ;         ;
+; IBUS.vhd                         ; yes             ; User VHDL File  ; C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd          ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 737       ;
+;                                             ;           ;
+; Total combinational functions               ; 471       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 348       ;
+;     -- 3 input functions                    ; 64        ;
+;     -- <=2 input functions                  ; 59        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 455       ;
+;     -- arithmetic mode                      ; 16        ;
+;                                             ;           ;
+; Total registers                             ; 352       ;
+;     -- Dedicated logic registers            ; 352       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 115       ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 352       ;
+; Total fan-out                               ; 3009      ;
+; Average fan-out                             ; 2.86      ;
++---------------------------------------------+-----------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                              ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name       ; Entity Name   ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+---------------+--------------+
+; |model_machine             ; 471 (0)             ; 352 (0)                   ; 0           ; 0            ; 0       ; 0         ; 115  ; 0            ; |model_machine            ; model_machine ; work         ;
+;    |ACC:u6|                ; 34 (34)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|ACC:u6     ; ACC           ; work         ;
+;    |ALU:u7|                ; 89 (89)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|ALU:u7     ; ALU           ; work         ;
+;    |COUNTER:u9|            ; 2 (2)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|COUNTER:u9 ; COUNTER       ; work         ;
+;    |CTRL:u10|              ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|CTRL:u10   ; CTRL          ; work         ;
+;    |DR:u5|                 ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|DR:u5      ; DR            ; work         ;
+;    |IBUS:u0|               ; 73 (73)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|IBUS:u0    ; IBUS          ; work         ;
+;    |IR:u8|                 ; 36 (36)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|IR:u8      ; IR            ; work         ;
+;    |MAR:u2|                ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|MAR:u2     ; MAR           ; work         ;
+;    |PC:u1|                 ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|PC:u1      ; PC            ; work         ;
+;    |RAM:u4|                ; 208 (208)           ; 256 (256)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|RAM:u4     ; RAM           ; work         ;
+;    |RAM_MUX:u3|            ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |model_machine|RAM_MUX:u3 ; RAM_MUX       ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 352   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 12    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 338   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; COUNTER:u9|temp[7]                     ; 2       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |model_machine|IR:u8|tmp[0]      ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |model_machine|ACC:u6|temp_a[12] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |model_machine|ACC:u6|temp_b[0]  ;
+; 5:1                ; 14 bits   ; 42 LEs        ; 28 LEs               ; 14 LEs                 ; Yes        ; |model_machine|ALU:u7|temp[13]   ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |model_machine|IBUS:u0|saves[10] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 115                         ;
+; cycloneiii_ff         ; 352                         ;
+;     CLR               ; 12                          ;
+;     ENA               ; 338                         ;
+;     plain             ; 2                           ;
+; cycloneiii_io_obuf    ; 48                          ;
+; cycloneiii_lcell_comb ; 472                         ;
+;     arith             ; 16                          ;
+;         3 data inputs ; 16                          ;
+;     normal            ; 456                         ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 57                          ;
+;         3 data inputs ; 48                          ;
+;         4 data inputs ; 348                         ;
+;                       ;                             ;
+; Max LUT depth         ; 11.50                       ;
+; Average LUT depth     ; 6.02                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Tue Jul 21 00:43:26 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off model_machine -c model_machine
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
+    Info (12022): Found design unit 1: PC-PC_arch File: C:/Users/hang/Documents/final_model_machine/model_machine/PC.vhd Line: 15
+    Info (12023): Found entity 1: PC File: C:/Users/hang/Documents/final_model_machine/model_machine/PC.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file ir.vhd
+    Info (12022): Found design unit 1: IR-IR_arch File: C:/Users/hang/Documents/final_model_machine/model_machine/IR.vhd Line: 28
+    Info (12023): Found entity 1: IR File: C:/Users/hang/Documents/final_model_machine/model_machine/IR.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ram.vhd
+    Info (12022): Found design unit 1: RAM-RAM_arch File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 13
+    Info (12023): Found entity 1: RAM File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ram_mux.vhd
+    Info (12022): Found design unit 1: RAM_MUX-RAM_MUX_arch File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM_MUX.vhd Line: 11
+    Info (12023): Found entity 1: RAM_MUX File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM_MUX.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file mar.vhd
+    Info (12022): Found design unit 1: MAR-MAR_arch File: C:/Users/hang/Documents/final_model_machine/model_machine/MAR.vhd Line: 11
+    Info (12023): Found entity 1: MAR File: C:/Users/hang/Documents/final_model_machine/model_machine/MAR.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file acc.vhd
+    Info (12022): Found design unit 1: ACC-ACC_arch File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 18
+    Info (12023): Found entity 1: ACC File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
+    Info (12022): Found design unit 1: ALU-ALU_arch File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 19
+    Info (12023): Found entity 1: ALU File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ctrl.vhd
+    Info (12022): Found design unit 1: CTRL-CTRL_arch File: C:/Users/hang/Documents/final_model_machine/model_machine/CTRL.vhd Line: 40
+    Info (12023): Found entity 1: CTRL File: C:/Users/hang/Documents/final_model_machine/model_machine/CTRL.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file dr.vhd
+    Info (12022): Found design unit 1: DR-DR_arch File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 13
+    Info (12023): Found entity 1: DR File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file counter.vhd
+    Info (12022): Found design unit 1: COUNTER-COUNTER_arch File: C:/Users/hang/Documents/final_model_machine/model_machine/COUNTER.vhd Line: 10
+    Info (12023): Found entity 1: COUNTER File: C:/Users/hang/Documents/final_model_machine/model_machine/COUNTER.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file model_machine.vhd
+    Info (12022): Found design unit 1: model_machine-mod_mach_arch File: C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd Line: 25
+    Info (12023): Found entity 1: model_machine File: C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file ibus.vhd
+    Info (12022): Found design unit 1: IBUS-IBUS_arch File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 13
+    Info (12023): Found entity 1: IBUS File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 4
+Info (12127): Elaborating entity "model_machine" for the top level hierarchy
+Info (12128): Elaborating entity "IBUS" for hierarchy "IBUS:u0" File: C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd Line: 204
+Warning (10492): VHDL Process Statement warning at IBUS.vhd(18): signal "ibus_dr_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 18
+Warning (10492): VHDL Process Statement warning at IBUS.vhd(19): signal "ibus_dr_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 19
+Warning (10492): VHDL Process Statement warning at IBUS.vhd(20): signal "ibus_acc_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 20
+Warning (10492): VHDL Process Statement warning at IBUS.vhd(21): signal "ibus_acc_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 21
+Warning (10492): VHDL Process Statement warning at IBUS.vhd(22): signal "ibus_alu_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 22
+Warning (10492): VHDL Process Statement warning at IBUS.vhd(23): signal "ibus_alu_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 23
+Info (12128): Elaborating entity "PC" for hierarchy "PC:u1" File: C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd Line: 205
+Warning (10492): VHDL Process Statement warning at PC.vhd(23): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/hang/Documents/final_model_machine/model_machine/PC.vhd Line: 23
+Info (12128): Elaborating entity "MAR" for hierarchy "MAR:u2" File: C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd Line: 206
+Info (12128): Elaborating entity "RAM_MUX" for hierarchy "RAM_MUX:u3" File: C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd Line: 207
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:u4" File: C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd Line: 208
+Info (12128): Elaborating entity "DR" for hierarchy "DR:u5" File: C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd Line: 209
+Info (12128): Elaborating entity "ACC" for hierarchy "ACC:u6" File: C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd Line: 210
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:u7" File: C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd Line: 211
+Info (12128): Elaborating entity "IR" for hierarchy "IR:u8" File: C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd Line: 212
+Info (12128): Elaborating entity "COUNTER" for hierarchy "COUNTER:u9" File: C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd Line: 213
+Info (12128): Elaborating entity "CTRL" for hierarchy "CTRL:u10" File: C:/Users/hang/Documents/final_model_machine/model_machine/model_machine.vhd Line: 214
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13049): Converted tri-state buffer "ALU:u7|alu_out[0]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "ALU:u7|alu_out[1]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "ALU:u7|alu_out[2]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "ALU:u7|alu_out[3]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "ALU:u7|alu_out[4]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "ALU:u7|alu_out[5]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "ALU:u7|alu_out[6]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "ALU:u7|alu_out[7]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "ALU:u7|alu_out[8]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "ALU:u7|alu_out[9]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "ALU:u7|alu_out[10]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "ALU:u7|alu_out[11]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "ALU:u7|alu_out[12]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "ALU:u7|alu_out[13]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "ALU:u7|alu_out[14]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "ALU:u7|alu_out[15]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ALU.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "ACC:u6|acc_out[0]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "ACC:u6|acc_out[1]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "ACC:u6|acc_out[2]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "ACC:u6|acc_out[3]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "ACC:u6|acc_out[4]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "ACC:u6|acc_out[5]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "ACC:u6|acc_out[6]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "ACC:u6|acc_out[7]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "ACC:u6|acc_out[8]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "ACC:u6|acc_out[9]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "ACC:u6|acc_out[10]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "ACC:u6|acc_out[11]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "ACC:u6|acc_out[12]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "ACC:u6|acc_out[13]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "ACC:u6|acc_out[14]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "ACC:u6|acc_out[15]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/ACC.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "DR:u5|dr_out[0]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "DR:u5|dr_out[1]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "DR:u5|dr_out[2]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "DR:u5|dr_out[3]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "DR:u5|dr_out[4]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "DR:u5|dr_out[5]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "DR:u5|dr_out[6]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "DR:u5|dr_out[7]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "DR:u5|dr_out[8]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "DR:u5|dr_out[9]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "DR:u5|dr_out[10]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "DR:u5|dr_out[11]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "DR:u5|dr_out[12]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "DR:u5|dr_out[13]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "DR:u5|dr_out[14]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 9
+    Warning (13049): Converted tri-state buffer "DR:u5|dr_out[15]" feeding internal logic into a wire File: C:/Users/hang/Documents/final_model_machine/model_machine/DR.vhd Line: 9
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276007): RAM logic "RAM:u4|mem" is uninferred due to asynchronous read logic File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 15
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM:u4|ram_out[0]" to the node "DR:u5|temp[0]" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM:u4|ram_out[1]" to the node "DR:u5|temp[1]" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM:u4|ram_out[2]" to the node "DR:u5|temp[2]" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM:u4|ram_out[3]" to the node "DR:u5|temp[3]" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM:u4|ram_out[4]" to the node "DR:u5|temp[4]" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM:u4|ram_out[5]" to the node "DR:u5|temp[5]" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM:u4|ram_out[6]" to the node "DR:u5|temp[6]" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM:u4|ram_out[7]" to the node "DR:u5|temp[7]" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM:u4|ram_out[8]" to the node "DR:u5|temp[8]" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM:u4|ram_out[9]" to the node "DR:u5|temp[9]" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM:u4|ram_out[10]" to the node "DR:u5|temp[10]" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM:u4|ram_out[11]" to the node "DR:u5|temp[11]" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM:u4|ram_out[12]" to the node "DR:u5|temp[12]" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM:u4|ram_out[13]" to the node "DR:u5|temp[13]" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM:u4|ram_out[14]" to the node "DR:u5|temp[14]" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM:u4|ram_out[15]" to the node "DR:u5|temp[15]" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/RAM.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "IBUS:u0|ibus_out[0]" to the node "ALU:u7|temp" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "IBUS:u0|ibus_out[1]" to the node "ALU:u7|temp" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "IBUS:u0|ibus_out[2]" to the node "ALU:u7|temp" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "IBUS:u0|ibus_out[3]" to the node "ALU:u7|temp" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "IBUS:u0|ibus_out[4]" to the node "ALU:u7|temp" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "IBUS:u0|ibus_out[5]" to the node "ALU:u7|temp" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "IBUS:u0|ibus_out[6]" to the node "ALU:u7|temp" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "IBUS:u0|ibus_out[7]" to the node "ALU:u7|temp" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "IBUS:u0|ibus_out[8]" to the node "ALU:u7|temp" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "IBUS:u0|ibus_out[9]" to the node "ALU:u7|temp" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "IBUS:u0|ibus_out[10]" to the node "ALU:u7|temp" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "IBUS:u0|ibus_out[11]" to the node "ALU:u7|temp" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "IBUS:u0|ibus_out[12]" to the node "ALU:u7|temp" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "IBUS:u0|ibus_out[13]" to the node "ALU:u7|temp" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "IBUS:u0|ibus_out[14]" to the node "ALU:u7|temp" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "IBUS:u0|ibus_out[15]" to the node "ALU:u7|temp" into an OR gate File: C:/Users/hang/Documents/final_model_machine/model_machine/IBUS.vhd Line: 9
+Info (13000): Registers with preset signals will power-up high File: C:/Users/hang/Documents/final_model_machine/model_machine/COUNTER.vhd Line: 15
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 852 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 23 input pins
+    Info (21059): Implemented 92 output pins
+    Info (21061): Implemented 737 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 90 warnings
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Tue Jul 21 00:43:38 2020
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:25
+
+

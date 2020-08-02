@@ -1,0 +1,11 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity COUNTER_tb is
+end COUNTER_tb;
+
+architecture test of COUNTER_tb is
+begin
+end test;
